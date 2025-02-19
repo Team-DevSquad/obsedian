@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObsedianGuard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Courier New', monospace;
+            background-color: #0a0a0a;
+            color: #00ff00;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            animation: pulse 2s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        .developer {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 1rem;
+        }
+        .cyber-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(rgba(0,255,0,0.03) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(0,255,0,0.03) 2px, transparent 2px);
+            background-size: 50px 50px;
+            animation: move 20s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
+            100% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; }
+        }
+        @keyframes move {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            p { font-size: 1.2rem; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ObsedianGuard</h1>
+        <p>Protecting your digital assets with cutting-edge security solutions. Stay one step ahead of cyber threats.</p>
+        <div class="developer">Developed with ❤️‍🩹 by DevSquad</div>
+    </div>
+    <div class="cyber-effect"></div>
+</body>
+</html>
