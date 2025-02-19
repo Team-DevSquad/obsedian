@@ -130,14 +130,3 @@ The repository is organized into three main directories:
 2. **Dynamic Analysis**: Predefined YAML-based test cases simulate real-world attack scenarios to identify runtime issues.
 
 3. **Dashboard**: The intuitive dashboard displays categorized vulnerability reports and provides actionable remediation suggestions, enabling prompt and effective responses.
-
-
-
-
-# obsedian
-# obsedian
-# obsedian
-# obsedian
-# obsedian
-# obsedian
-# obsedian
